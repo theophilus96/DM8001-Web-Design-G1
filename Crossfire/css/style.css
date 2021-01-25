@@ -1,6 +1,6 @@
 * {
-  /* margin: 0;
-  padding: 0; */
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -9,13 +9,26 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-p {
-  color: blue;
+header,
+footer {
+  background-color: rgb(184, 180, 180);
 }
 
+p {
+  color: hotpink;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Courier;
+  text-decoration: underline;
+}
 h1 {
   color: red;
-  font-size: 0.5em;
 }
 /* hyperlinks */
 a:link {
@@ -45,4 +58,34 @@ ul li {
 }
 nav ul {
   background: black;
+}
+
+/* ID and classes */
+#contact {
+  background-color: teal;
+}
+
+#contact p {
+  color: white;
+}
+
+.cta {
+  background-color: white;
+  color: blue;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.emphasis {
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.warning {
+  background-color: red;
+}
+
+.wrap{
+    width: 70%;
+    
 }
