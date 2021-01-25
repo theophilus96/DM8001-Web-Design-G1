@@ -1,6 +1,12 @@
 * {
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
+}
+
+body {
+  background: #363636;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 p {
@@ -10,4 +16,33 @@ p {
 h1 {
   color: red;
   font-size: 0.5em;
+}
+/* hyperlinks */
+a:link {
+  color: orangered;
+  background: silver;
+  text-decoration: none;
+}
+a:visited {
+  color: royalblue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: yellow;
+  cursor: crosshair;
+}
+a:active {
+  color: green;
+}
+/* bullets / list */
+ul {
+  background: orange;
+}
+
+ul li {
+  background: aqua;
+}
+nav ul {
+  background: black;
 }
