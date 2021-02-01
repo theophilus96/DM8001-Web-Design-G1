@@ -1,12 +1,54 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.primary{
-    background-color: teal;
+.primary {
+  color: white;
+  background-color: teal;
+  border: 10px solid red;
+  border-bottom: 5px dashed purple;
+  padding: 40px 20% 20px 20%;
+  margin: 50px;
+  width: 50%;
 }
 
-.secondary{
-    background-color: orange;
+.secondary {
+  background-color: orange;
+}
+
+a:link {
+  color: greenyellow;
+  background-color: #000000;
+  padding: 20px;
+}
+
+a:visited {
+  color: #bada55;
+}
+a:hover {
+}
+a:active {
+}
+
+body {
+  background-color: #363636;
+  color: white;
+  font-family: Verdana;
+}
+
+header,
+footer {
+}
+.cta {
+}
+.caps {
+}
+.warning {
+}
+.wrap {
+}
+#contact {
+}
+#contact p {
 }
