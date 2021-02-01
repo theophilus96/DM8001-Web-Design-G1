@@ -32,13 +32,16 @@ a:active {
 }
 
 body {
-  background-color: #363636;
+  background: #363636 url(../images/ss_baldursgate.jpg);
   color: white;
   font-family: Verdana;
+  background-size: cover;
 }
 
 header,
 footer {
+  background-color: silver;
+  padding: 30px;
 }
 .cta {
 }
@@ -47,8 +50,37 @@ footer {
 .warning {
 }
 .wrap {
+  /* background-image: url(../images/ss_baldursgate.jpg);
+  background-color: red; */
+  width: 80%;
+  padding: 30px;
+  margin: 30px auto;
 }
 #contact {
 }
 #contact p {
+}
+nav {
+  background-color: teal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+}
+
+.module {
+  margin-bottom: 40px;
+  border: 1px solid white;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+p{
+    background-color: salmon;
+    margin-bottom: 10px;
+}
+img{
+    border: 1px solid white;
 }
