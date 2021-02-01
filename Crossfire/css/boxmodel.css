@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.primary{
+    background-color: teal;
+}
+
+.secondary{
+    background-color: orange;
+}
