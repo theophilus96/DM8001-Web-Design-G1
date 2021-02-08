@@ -28,9 +28,12 @@
       nav {
         background-color: green;
         height: 40px;
-        display: none;
       }
       footer {
+      }
+      .wrapper {
+        width: 80%;
+        margin: 20px auto;
       }
       .content {
         margin: 4%;
@@ -40,48 +43,57 @@
       }
       .About {
         background-color: tomato;
-        width: 20%;
+        width: 14%;
         float: left;
+        padding: 3%;
       }
       .Links {
         background-color: yellow;
-        width: 50%;
+        width: 44%;
         float: left;
+        padding: 3%;
       }
       .Contact {
         background-color: cadetblue;
-        width: 30%;
+        width: 24%;
         float: left;
+        padding: 3%;
       }
-      .clearfix{
-          clear: both;
+      .clearfix {
+        clear: both;
+      }
+      img {
+        max-width: 100%;
       }
     </style>
   </head>
   <body>
-    <header>mast image or somthing</header>
-    <nav>navigation goes here</nav>
+    <div class="wrapper">
+      <header>mast image or somthing</header>
+      <nav>navigation goes here</nav>
 
-    <section class="content">
-      <section class="intro">
-        <h2>intro</h2>
-        <p>lorem ipsum</p>
+      <section class="content">
+        <section class="intro">
+          <h2>intro</h2>
+          <p>lorem ipsum</p>
+        </section>
+        <section class="About">
+          <img src="../session5/images/images/malta_dwejra.jpg" />
+          <h2>About us</h2>
+          <p>lorem ipsum</p>
+        </section>
+        <section class="Links">
+          <h2>Links</h2>
+          <p>lorem ipsum</p>
+        </section>
+        <section class="Contact">
+          <h2>Contact</h2>
+          <p>lorem ipsum</p>
+        </section>
       </section>
-      <section class="About">
-        <h2>About us</h2>
-        <p>lorem ipsum</p>
-      </section>
-      <section class="Links">
-        <h2>Links</h2>
-        <p>lorem ipsum</p>
-      </section>
-      <section class="Contact">
-        <h2>Contact</h2>
-        <p>lorem ipsum</p>
-      </section>
-    </section>
-    <div class="clearfix"></div>
+      <div class="clearfix"></div>
 
-    <footer>&copy; hello</footer>
+      <footer>&copy; hello</footer>
+    </div>
   </body>
 </html>
