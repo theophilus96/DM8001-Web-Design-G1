@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>website</title>
+    <meta name="viewport" content="width=device-width" />
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      :root {
+        --theme-primary: rgb(236, 182, 110);
+      }
+      body {
+        background-color: #222;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      header,
+      footer {
+        background: var(--theme-primary);
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      nav {
+        background-color: green;
+        height: 40px;
+        display: none;
+      }
+      footer {
+      }
+      .content {
+        margin: 4%;
+      }
+      .intro {
+        background-color: violet;
+      }
+      .About {
+        background-color: tomato;
+        width: 20%;
+        float: left;
+      }
+      .Links {
+        background-color: yellow;
+        width: 50%;
+        float: left;
+      }
+      .Contact {
+        background-color: cadetblue;
+        width: 30%;
+        float: left;
+      }
+      .clearfix{
+          clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <header>mast image or somthing</header>
+    <nav>navigation goes here</nav>
+
+    <section class="content">
+      <section class="intro">
+        <h2>intro</h2>
+        <p>lorem ipsum</p>
+      </section>
+      <section class="About">
+        <h2>About us</h2>
+        <p>lorem ipsum</p>
+      </section>
+      <section class="Links">
+        <h2>Links</h2>
+        <p>lorem ipsum</p>
+      </section>
+      <section class="Contact">
+        <h2>Contact</h2>
+        <p>lorem ipsum</p>
+      </section>
+    </section>
+    <div class="clearfix"></div>
+
+    <footer>&copy; hello</footer>
+  </body>
+</html>
