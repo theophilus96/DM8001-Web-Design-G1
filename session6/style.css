@@ -3,18 +3,95 @@
   padding: 0;
 }
 
+:root {
+  --theme-primary: rgb(51, 94, 212);
+}
+
 body {
   background: #222;
   color: white;
-  font-family: Verdana;
+  font-family: Arial;
 }
 
-p {
-  color: red;
+.wrapper {
+  background: rgb(61, 61, 61);
 }
 
-@media screen and (min-width: 600px) {
+header,
+footer {
+  background: orangered;
+}
+nav.nav {
+  background: orange;
+  display: none;
+}
+
+nav.mob-nav {
+  background: green;
+}
+
+.content {
+  background: rgb(75, 75, 75);
+}
+.intro {
+  background: purple;
+}
+.about {
+  background: rgb(80, 47, 172);
+}
+.links {
+  background: rgb(49, 107, 194);
+}
+.contact {
+  background: rgb(108, 163, 235);
+}
+
+header {
+  height: 100vh;
+}
+footer {
+  height: 10vh;
+}
+
+.clearfix {
+  clear: both;
+}
+
+@media screen and (min-width: 700px) {
+  header {
+    height: 200px;
+  }
+  .wrapper {
+    width: 80%;
+    margin: 20px auto;
+  }
+  .about {
+    width: 50%;
+    float: left;
+  }
+  .links {
+    width: 30%;
+    float: left;
+  }
+  .contact {
+    width: 20%;
+    float: left;
+  }
+
+  .content {
+    background: white;
+    padding: 4%;
+  }
+
+  nav.nav {
+    display: block;
+  }
+  nav.mob-nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
   p {
-    color: orange;
+    color: rgb(26, 206, 219);
   }
 }
