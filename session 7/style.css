@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #222;
+  font-family: Verdana;
+  font-size: 1em;
+}
+.wrapper {
+  background: #333;
+  color: #fff;
+}
+header,
+footer {
+  background: #bf6430;
+}
+nav {
+  background: #cfa824;
+}
+
+.about {
+  background: #a14023;
+}
+.sidebar {
+  background: #00aab7;
+}
+.gallery {
+  background: #a38138;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+@media only screen and (min-width: 600px) {
+    header{
+        background-color: red;
+    }
+
+    .wrapper{
+        display: grid;
+        grid-template-columns: 200px 400px 200px;
+        grid-template-rows: 50px auto 50px;
+    }
+}
