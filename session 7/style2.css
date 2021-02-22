@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #222;
+  font-family: Verdana;
+  font-size: 1em;
+}
+.wrapper {
+  background: #333;
+  color: #fff;
+}
+header,
+footer {
+  background: #bf6430;
+  padding: 20px;
+}
+nav {
+  background: #cfa824;
+  padding: 20px;
+}
+
+.about {
+  background: #a14023;
+  padding: 20px;
+}
+.sidebar {
+  background: #00aab7;
+  padding: 20px;
+}
+.gallery {
+  background: #a38138;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 1.2em;
+  padding-bottom: 20px;
+
+}
+
+@media only screen and (min-width: 600px) {
+  header {
+    background-color: red;
+    grid-area: header;
+  }
+
+  nav {
+    grid-area: nav;
+  }
+
+  footer {
+    grid-area: foot;
+  }
+
+  .about {
+    grid-area: about;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .gallery {
+    grid-area: pics;
+  }
+
+  .sidebar {
+    grid-area: side;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "header header"
+      "nav side"
+      "about side"
+      "pics side"
+      "foot foot";
+  }
+}
