@@ -15,19 +15,24 @@ body {
 header,
 footer {
   background: #bf6430;
+  padding: 20px;
 }
 nav {
   background: #cfa824;
+  padding: 20px;
 }
 
 .about {
   background: #a14023;
+  padding: 20px;
 }
 .sidebar {
   background: #00aab7;
+  padding: 20px;
 }
 .gallery {
   background: #a38138;
+  padding: 20px;
 }
 
 h2 {
@@ -35,13 +40,43 @@ h2 {
 }
 
 @media only screen and (min-width: 600px) {
-    header{
-        background-color: red;
-    }
+  header {
+    background-color: red;
+    grid-column-start: 1;
+    grid-column-end: 3;
 
-    .wrapper{
-        display: grid;
-        grid-template-columns: 200px 400px 200px;
-        grid-template-rows: 50px auto 50px;
-    }
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  nav {
+    grid-column: 1/2;
+  }
+
+  footer {
+    grid-column: 1/3;
+    grid-row: 5/6;
+  }
+
+  .about {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  .gallery {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+
+  .sidebar {
+    grid-column: 2/3;
+    grid-row: 2/5;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    grid-gap: 15px;
+  }
 }
