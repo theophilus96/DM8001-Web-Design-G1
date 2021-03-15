@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #222;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+            margin: 2vh 1vw;
+            background: #333;
+            padding: 2%;
+        }
+
+h1 {
+    margin-bottom: 25px;
+}
+
+.wrapper h2 {
+    margin-bottom: 25px;
+}
+
+.module {
+    background: #444;
+    width: 98%;
+    /* height: 300px; */
+    padding: 1%;
+    margin-bottom: 20px;
+    border: 1px solid white;
+    transition: 1s linear; 
+
+     /* transform: translateX(50px); */
+    /* transform: rotate(90deg); */
+    /* transform: scale(0.5); */
+
+}
+
+.module:hover {
+    background: teal;
+    /* height: 500px; */
+    border-radius: 20px 20px;
+    /* transform: translateX(-50px); */
+    
+}
+
+.module h2 {
+    transition: 2s linear; 
+}
+.module:hover h2 {
+    /* font-size: 2em; */
+}
+
+
+img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+.galleryimages img {
+        border: 1px solid white;
+        transition: 1s ease-in-out;
+        transform-origin: top left;
+}
+
+.galleryimages img[src$="this.jpg"] {
+    transform-origin: top left;
+}
+.galleryimages img[src$="thisThat.jpg"] {
+    transform-origin: top center;
+}
+.galleryimages img[src$="that.jpg"] {
+    transform-origin: top right;
+}
+
+.galleryimages img:hover {
+    transform: scale(2);
+}
+
+
+
+p { margin-bottom: 20px; }
+
+.shape {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    transition: 1s linear;
+
+    align-items: center;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-play-state:running;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes move {
+    /* from { 
+        background: red;
+        left: 0;
+    }
+    to {
+        background: blue;
+        left: 90%;
+        border-radius: 50%;
+    } */
+
+    0% { 
+        background: red;
+        left: 0;
+    }
+
+    25% {
+        top: 30px;
+    }
+    50% {
+        top: 100px;
+    }
+    100% {
+        background: blue;
+        left: 90%;
+        border-radius: 50%;
+        transform: rotate(90deg)
+    };
+
+}
+
+@media screen and (min-width: 700px) {
+    .wrapper {
+        padding: 3%;
+    }
+
+    .module {
+
+    }
+
+    .galleryimages {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-gap: 15px;
+    }
+
+}

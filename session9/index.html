@@ -5,7 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Transitions & JQuery</title>
 
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="./css/lightbox.css">
+        <link rel="stylesheet" href="./css/style.css">
+
 
 		</style>
 	</head>
@@ -17,9 +19,20 @@
 			  	<h2>Transitions</h2>
 			  	<p>Introducing This & That, two very spoilt cats.</p>
 			  	<div class="galleryimages">
-			  		<img src="images/this.jpg" alt="This"> 
-					<img src="images/thisThat.jpg" alt="This &amp; That">
-					<img src="images/that.jpg" alt="That">
+                      <a href="./images(1)/images/this.jpg" alt="This" data-lightbox="image-This">
+                        <img src="./images(1)/images/this.jpg">
+                     </a>
+					<a href="./images(1)/images/thisThat.jpg" alt="This &amp; That" data-lightbox="image-This-That">
+                    <img src="./images(1)/images/thisThat.jpg" alt="">
+                    </a>
+					<a href="./images(1)/images/that.jpg" alt="That"  data-lightbox="That">
+                    <img src="./images(1)/images/that.jpg" alt="That">
+                    </a>
+                    <!-- <a href="./images(1)/images/next.png" alt="next" data-lightbox="next"></a>
+					<a href="./images(1)/images/prev.png" alt="prev" data-lightbox="prev"></a>
+					<a href="./images(1)/images/close.png" alt="close" data-lightbox="close"></a>
+					<a href="./images(1)/images/loading.gif" alt="loading" data-lightbox="loading"></a> -->
+
 			  	</div>
 			</section>
 
@@ -28,6 +41,7 @@
 		  </section>
 
 		</section>
+        <script src="./js/lightbox-plus-jquery.js"></script>
 	</body>
 
 
